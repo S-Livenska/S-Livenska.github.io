@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+
+
+body{
+    color: rgb(21, 25, 29);
+    font-family: "Antonio", sans-serif; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+.hero-heading{
+    color: rgb(80, 10, 90);
+    font-family: "Dancing Script", monospace; 
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+footer{
+    color: rgb(17, 17, 161);
+    font-family: "Noto Serif Display", serif; 
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+}
