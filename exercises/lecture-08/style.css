@@ -1,0 +1,19 @@
+thead {
+    background-color: lightgray;
+    text-align: center;
+}
+
+tr {
+    height: 40px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+}
+
+img {
+    max-width: 50px;
+}
