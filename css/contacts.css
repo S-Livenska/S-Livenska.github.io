@@ -1,0 +1,480 @@
+@import '/node_modules/normalize.css/normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+body {
+    font-family: "Roboto", sans-serif; 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+    background-color: white;
+    text-decoration: none;
+}
+
+
+.navbar-container {
+    display: flex; /* гнучкий контейнер */
+    justify-content: space-between; /* Розподіл простору між елементами */
+    background-color: #333; /* Колір футера */
+    padding: 20px; /* Внутрішній відступ */
+    align-items: center;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; */
+}
+
+.navbar-wrapper {
+    display: flex; /* гнучкий контейнер */
+}
+
+.navbar-nav {
+    margin: 0; /* Зняття зовнішнього margin, який список має по дефолту */
+    display: flex; /* гнучкий контейнер, було блочне, стало flex і поряд */
+    flex-wrap: wrap; /* якщо буде мобільний розмір, то текст не буде переноситись, якщо новрап то буде уходити за край екрану */ 
+    flex-direction: row; /* по замовчуванню вже стоїть це значення, його не треба прописувати */
+}
+
+.nav-item {
+    margin-right: 10px; /* Простір між пунктами навігації */
+}
+
+.card-group {
+    max-width: 100%;
+}
+
+.navigation-contacts {
+    grid-column: span 10;
+    grid-column: span 12;
+    background-color: #525151;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+.hero-text-center{
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    background-size: cover !important;
+    height: auto;
+    max-width: 100%;
+    height: 150px;
+}
+
+.hero-text-center h2 {
+    color: crimson;
+}
+
+
+.regular-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.padding-section {
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-family:"Noto Serif Display", serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 10px;
+}
+
+h3 {
+    font-family:"Noto Serif Display", serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px;
+}
+
+.img-fluid {
+    max-width: 20%;
+    height: auto;
+}
+
+.divider {
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(255, 205, 155) 5%, 
+   rgb(235, 157, 97) 17%, 
+   rgb(241, 140, 64)40%, 
+   rgb(196, 88, 5) 85%, 
+   rgb(184, 83, 5) 95%);
+}
+
+.divider1{
+    background-attachment: fixed !important;
+    /* background-image: url(img/dan-cristian-padure-cp37rgEMJ8c-unsplash.jpg); */
+    background-size: 100% !important;
+    font-family: "Dancing Script", monospace; 
+    color: rgb(255, 0, 0);
+    background-position: center center;
+    padding-top: 10%
+}
+
+.hero-heading{
+    color: rgb(255, 0, 0);
+    font-family: "Dancing Script", monospace; 
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.video {
+    display: flex; /* гнучкий контейнер, було блочне, стало flex і поряд */
+    flex-wrap: wrap;
+}
+
+
+/* blog */
+
+.blog {
+    margin: 4% auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+
+.blog-title {
+    margin: 0 24px 32px;
+    font-size: 24px;
+}
+
+.blog-item {
+    margin: 0 16px 16px;
+    min-height: 64px;
+    background: rgb(0, 0, 0);
+    background-size: cover; /* картинка кавером */
+    border-radius: 8px;
+    transition: .5s ease; /* якщо припинити наведення курсора то воно гладенько повернеться до свого розміру */
+}
+
+.blog-item:hover {
+   
+    transition: .5s ease;
+    transform: translate3d(0, -1px, 0) scale(1.1); /* scale дає ефект руху,  */
+}
+.blog-item a {
+    color: inherit; /* бере колір з батьківського елемента */
+}
+
+.picture {
+    height: inline;
+    margin: 0;
+    overflow: hidden; /* приховає контент який вийде за межі(для картинки) */
+}
+
+.picture img {
+    object-fit: cover; /* картинка кавером */
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.post-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.data-container {
+    padding: 24px;
+}
+
+.post-content {  
+    margin-bottom: 16px;
+    font-size: 13px;
+    text-align: left;
+    color: #999;
+}
+.reading-meta {
+    color: #d0d0d0;
+    font-size: 13px;
+    letter-spacing: .8px;
+    text-transform: uppercase; /* робить літери капсом */
+    line-height: 16px; /* висота рядка */
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+@media (min-width:480px) {
+
+    .blog-container {
+      
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (min-width:600px) {
+
+    .blog-container {
+      
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width:900px) {
+
+    .blog-container {
+      
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media (min-width:1200px) {
+
+    .blog-container {
+      
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+/* Fotm */
+
+.form {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.input-group div {
+    width: 100%;
+
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+textarea {
+    width: 102%;
+}
+
+
+/*footer*/
+footer {
+    background-color: #000000;
+    color: #d2e5e6;
+}
+
+.footer-bar-wrapper {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-bar-nav {
+    display: inline-block;
+}
+
+.footer-item {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.footer-container {
+    display: flex;
+    /* background-color: #242424; */
+    padding: 20 px 0px 20px 0px;
+    justify-content: center;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.social-icon {
+    display: block;
+    background: #3f3939;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 48px;
+    height: 48px;
+}
+
+.fa-brands:hover {
+    color: #1DCF94;
+}
+
+
+
+/*login form*/
+.container-login{
+    color: rgb(1, 1, 1);
+}
+
+
+/*catalogue*/
+
+.navigation {
+    grid-column: span 10;
+    grid-column: span 12;
+    background-color: #525151;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .catalogue {
+    grid-column: span 12;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    background-size: cover; /* картинка кавером */
+    border-radius: 8px;
+    transition: .5s ease; /* якщо припинити наведення курсора то воно гладенько повернеться до свого розміру */
+    transition: .5s ease;
+    transform: translate3d(0, -1px, 0) scale(1.1); /* scale дає ефект руху,  */
+  }
+
+  .item > img {
+    max-width: 350px;
+    height: 200px;
+    display: block;
+  }
+
+  .price {
+    color: rgb(9, 9, 9)
+  }
+
+  .title-name {
+    color: rgb(9, 9, 9)
+  }
+
+
+  /*cart*/
+
+  .cart-header {
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 48px;
+}
+
+.cart-table {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 48px;
+    vertical-align: top;
+    border-collapse: collapse;
+    display: table;
+    color: black;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-style: dashed;
+    border-width: 1px 0;
+    border-color: rgb(0, 0, 0);
+}
+
+.bg-table-header {
+    background-color: rgb(48, 48, 48);
+}
+
+.cart-table thead {
+    vertical-align: bottom;
+}
+
+.cart-table th {
+    padding: 10px ;
+    color: rgb(195, 192, 192);
+    font-weight: 700;
+    text-align: start;
+}
+
+.cart-table tr {
+    display: table-row;
+}
+
+.cart-table td {
+    padding: 12px;
+    display: table-cell;
+}
+
+.cart-table td .remove {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    color: rgb(206, 15, 15);
+}
+
+.remove :hover {
+    color: rgb(172, 59, 11);
+}
+
+tbody {
+    background-color: rgb(255, 255, 255);
+}
+
+.reset-anchor {
+    color: black;
+}
+
+.shop-link {
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+.underline-link {
+    text-decoration: underline;
+    text-decoration-color: rgb(172, 59, 11);
+}
